@@ -1,0 +1,32 @@
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Note {
+  id       String   @id @default(auto()) @map("_id") @db.ObjectId
+  title    String
+  noteText String
+  date     DateTime @default(now())
+  status   Boolean  @default(true)
+
+  userId String @db.ObjectId
+  user   Users  @relation(fields: [userId], references: [id])
+}
+
+model Users {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  username  String   @unique
+  email     String   @unique
+  password  String
+  FirstName String
+  LastName  String
+  createdAt DateTime @default(now())
+
+  // 👇 Add this line (back relation)
+  notes Note[]
+}

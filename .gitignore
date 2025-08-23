@@ -1,0 +1,40 @@
+# === General ===
+node_modules/
+dist/
+build/
+.DS_Store
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# === Environment Files ===
+.env
+
+
+# === Backend (Express/Node) ===
+/backend/node_modules/
+/backend/dist/
+/backend/build/
+/backend/coverage/
+
+
+# === Frontend (React/Vite/CRA) ===
+/frontend/node_modules/
+/frontend/dist/
+/frontend/build/
+/frontend/.vite/
+/frontend/.next/
+/frontend/coverage/
+
+# === Editor Specific ===
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.bak
