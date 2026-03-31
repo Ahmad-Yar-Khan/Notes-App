@@ -15,8 +15,7 @@ The primary objective of this project was to move beyond temporary "in-memory" s
 * **Frontend:** React.js (Hooks), Axios for API requests.
 * **Backend:** Node.js, Express.js.
 * **Database:** MongoDB (Mongoose ODM).
-* **Styling:** CSS3 / Bootstrap (for a clean, organized layout).
-
+* 
 ---
 
 ## 🧠 Key Technical Learnings
