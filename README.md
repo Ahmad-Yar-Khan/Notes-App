@@ -32,4 +32,4 @@ Building this "Notes App" helped me master several backend and database concepts
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/Ahmad-Yar-Khan/mern-notes-app.git](https://github.com/Ahmad-Yar-Khan/mern-notes-app.git)
+   git clone [https://github.com/Ahmad-Yar-Khan/mern-notes-app.git](https://github.com/Ahmad-Yar-Khan/Notes-App.git)
